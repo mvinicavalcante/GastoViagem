@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater) //pego o layout
-        setContentView(binding.root)
+        binding = ActivityMainBinding.inflate(layoutInflater) //pego o layout -> inflando para pegar
+        setContentView(binding.root) //adiciono à rota do Android e ele reconhece
 
         binding.buttonCalculate.setOnClickListener(this)
     }
